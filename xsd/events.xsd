@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Events">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Event">
+          <xs:complexType>
+            <xs:attribute name="eventDateTime" type="xs:dateTime" />
+            <xs:attribute name="userUID" type="xs:string" />
+            <xs:attribute name="direction" type="xs:string" />
+            <xs:attribute name="eventType" type="xs:string" />
+            <xs:attribute name="pointName" type="xs:string" />
+            <xs:attribute name="firstName" type="xs:string" />
+            <xs:attribute name="lastName" type="xs:string" />
+            <xs:attribute name="middleName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="endDateTime" type="xs:dateTime" />
+      <xs:attribute name="startDateTime" type="xs:dateTime" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
